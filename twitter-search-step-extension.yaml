@@ -1,0 +1,10 @@
+name: Extented configuration
+id: twitter-search-source
+type: step
+url: http://localhost:3002/remoteEntry.js
+module: "./TwitterSearchSource"
+scope: "TwitterSearchSource"
+constraints:
+   - mandatory: false
+     operation: CONTAINS_STEP_NAME
+     parameter: twitter-search-source
